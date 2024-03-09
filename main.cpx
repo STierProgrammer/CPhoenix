@@ -1,0 +1,15 @@
+import std, CGui, fun-co
+
+void fc_key_checker(){
+  print("Checked")
+}
+
+void fc_key(){
+  print("Hello World")
+  next(fc_key_checker()) //From fun-co
+}
+
+int main(){
+  keyInput^[ ?{@pressed: W} -> fc_key() } key
+  return 0
+}
